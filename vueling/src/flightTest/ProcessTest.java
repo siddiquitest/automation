@@ -45,9 +45,9 @@ import websiteAPI.ServicePage;
 		DataFlight test1 = new DataFlight(tableData.get(2).get(i).toString(), tableData.get(3).get(i).toString(), 2, 2016, 8, 29);
 		Passenger passenger1 = new Passenger(tableData.get(20).get(i).toString(), true, tableData.get(19).get(i).toString(),tableData.get(25).get(i).toString(),tableData.get(26).get(i).toString(),tableData.get(25).get(i).toString()+" +"+tableData.get(27).get(i).toString(), tableData.get(28).get(i).toString(),tableData.get(29).get(i).toString());
 		//ServicePage service1 = new ServicePage(driver);
-		ServicePage service1 = new ServicePage(driver,tableData.get(30).get(i).toString(), tableData.get(38).get(i).toString(), "0");
+		ServicePage service2 = new ServicePage(driver,tableData.get(30).get(i).toString(), tableData.get(38).get(i).toString(), "0");
 		DataPayment payment = new DataPayment(tableData.get(46).get(i).toString(), tableData.get(47).get(i).toString(), tableData.get(48).get(i).toString(), tableData.get(49).get(i).toString());
-		SearchFlight process = new SearchFlight(driver, test1, passenger1, service1);
+		SearchFlight process = new SearchFlight(driver, test1, passenger1, service2);
 		process.SearchFlight();
 	   
 		driver.close();
